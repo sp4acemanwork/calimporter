@@ -15,10 +15,11 @@ A Textual-based CLI tool to convert course schedule Excel files into CSV files c
 - `textual`
 
 ## Installation
+### Linux / MacOs
 ```bash
 ./buildapp.sh
 ```
-### If on windows 
+### Windows 
 ```powershell
 .\package.ps1
 ```
