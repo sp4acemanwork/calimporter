@@ -209,16 +209,16 @@ def perform_ics_conversion(file_path, output_dir):
             # Ensure end time is at least 1 minute after start time if they are identical
             if dt_start == dt_end:
                 dt_end += timedelta(minutes=1)
-
-            # Format dates for ICS (YYYYMMDDTHHMMSSZ)
+            # Note no Z at the end as input is local time
+            # Format dates for ICS (YYYYMMDDTHHMMSS)
             # We assume UTC for simplicity in this converter
-            dt_start_str = dt_start.strftime('%Y%m%dT%H%M%SZ')
-            dt_end_str = dt_end.strftime('%Y%m%dT%H%M%SZ')
+            dt_start_str = dt_start.strftime('%Y%m%dT%H%M%S')
+            dt_end_str = dt_end.strftime('%Y%m%dT%H%M%S')
 
             # Construct RRULE
             by_days = ",".join([day_map[d] for d in days_list if d in day_map])
-            # Format until string: YYYYMMDDT235900Z
-            until_str = end_date.strftime('%Y%m%dT235900Z')
+            # Format until string: YYYYMMDDT235900
+            until_str = end_date.strftime('%Y%m%dT235900')
 
             ics_content.append("BEGIN:VEVENT")
             ics_content.append(f"SUMMARY:{subject} ({instructor})")
