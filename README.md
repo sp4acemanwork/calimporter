@@ -20,7 +20,7 @@ A Textual-based CLI tool to convert course schedule Excel files into CSV files c
 ```
 ### If on windows 
 ```powershell
-./package.ps1
+.\package.ps1
 ```
 
 ## Usage
