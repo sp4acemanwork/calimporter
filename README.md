@@ -9,20 +9,24 @@ A Textual-based CLI tool to convert course schedule Excel files into CSV files c
 - **Error Handling**: Validates file paths and handles missing headers gracefully.
 
 ## Prerequisites
-- Python 3.8+
+- Python 3.14.6+ (recommended but older may work)
 - `pandas`
 - `openpyxl`
 - `textual`
 
 ## Installation
 ```bash
-pip install pandas openpyxl textual
+./buildapp.sh
+```
+### If on windows 
+```powershell
+./package.ps1
 ```
 
 ## Usage
 1. Run the script:
    ```bash
-   python main.py
+   ./cfg
    ```
 2. Enter the path to your `.xlsx` file when prompted.
 3. Enter the directory where you want to save the `.csv` file.
