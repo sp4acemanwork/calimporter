@@ -1,4 +1,3 @@
-
 import pandas as pd
 from datetime import datetime, timedelta
 from textual.app import App, ComposeResult
