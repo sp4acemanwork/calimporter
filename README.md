@@ -1,6 +1,6 @@
 # Google Calendar Converter
 
-A Textual-based CLI tool to convert course schedule Excel files into CSV files compatible with Google Calendar imports.
+A Textual-based CLI tool to convert course schedule Excel files into CSV or ics files compatible with Google Calendar imports.
 
 ## Features
 - **Textual UI**: Interactive interface to select input files and output directories.
